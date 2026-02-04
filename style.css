@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7c7878;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.header p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header p:last-child {
+    font-size: 0.9rem;
+}
+
+nav .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links ul li a:hover {
+    color: #ff06f3;
+}
+
+.text-box{
+    width: 100%;
+    color: #333;
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.text-box h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.text-box p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ee00b2;
+    border-radius: 20px;
+    padding: 12px 34px;
+    font-size: 1rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #e909de;
+    color: white;
+}
+
+.courses {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.courses h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.courses p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.courses ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    list-style-type:circle;
+    padding-left: 32px;
+}
+
+.courses ol li {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #555;
+}
+
+.courses ol li:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #201f1f;
+    color: white;
+    margin-top: 2rem;
+}
+
+.mission h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.mission p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.testimonials{
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 2rem;
+}
+
+.testimonials h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;    
+}
+
+.testimonials p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial-col, .testimony-col {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-col:hover, .testimony-col:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-col img, .testimony-col img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial-col h3, .testimony-col h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.testimonial-col p, .testimony-col p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.vision{
+   text-align: center;
+    padding: 50px 20px;
+    background-color: #201f1f;
+    color: white;
+    margin-top: 2rem;
+}
+.vision h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.vision p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer .info {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer .info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff06f3;
+}
+
+.footer .info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.footer .info ol {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .info ol li {
+    margin-bottom: 0.5rem;
+}
+
+.footer .info ol li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .info ol li a:hover {
+    color: #ff06f3;
+}
+
+/* -----Registration Page----------------------------------------- */
+
+.registration-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.registration-form .container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.registration-form h1 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 2rem;
+}
+
+.registration-form p {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
